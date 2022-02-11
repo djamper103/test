@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 10vw 2vh;
+}
+
+.container h3{
+    margin: 0;
+    padding: 0;
+}
+
+.dishName{
+    font-size: 25px;
+}
+
+.containerImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe{
+    font-size: 20px;
+    text-align: center;
+    word-break:break-all;
+}
+
+.containerButton{
+    margin-top: 2vh;
+}
+
+.container img{
+    width: 40vw;
+    height: 60vh;
+    margin: 2vh 0 5vh;
+}
+
+.container button{
+   font-size: 25px;
+   color: black;
+   text-decoration: none;
+   background-color: transparent;
+   border: none;
+   padding: 0 0.6vw;
+}
+
+.container button:hover{
+    color: rgb(212, 82, 82);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        margin: 0 4vw 2vh;
+    }
+
+    .container img{
+        width: 60vw;
+        height: 55vh;
+    }
+
+    .recipe{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        margin: 0 0 2vh;
+    }
+    
+    .container img{
+        width: 70vw;
+        height: 30vh;
+    }
+
+    .container button{
+        padding: 0 2vw;
+    }
+
+    .dishName{
+        font-size: 20px;
+    }
+
+    .recipe{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dishName{
+        font-size: 18px;
+    }
+}

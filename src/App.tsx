@@ -6,14 +6,14 @@ import {routes} from './routes/routes';
 
 function App() {
   return (
-    <div>
+    <>
       <Header/>
-    <Routes>
-      {
-        routes.map(route => <Route element={route.element} path={route.path} key={route.path} />)
-      }
-    </Routes>
-  </div>
+      <Routes>
+        {
+          routes.map(route => <Route element={route.element} path={route.path} key={route.path} />)
+        }
+      </Routes>
+  </>
   );
 }
 

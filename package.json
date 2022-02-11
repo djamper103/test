@@ -1,4 +1,5 @@
 {
+  "homepage": "https://djamper103.github.io/test",
   "name": "test",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,7 @@
     "@types/react-dom": "^16.9.14",
     "@types/react-redux": "^7.1.22",
     "axios": "^0.25.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.26.1",
@@ -24,6 +26,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

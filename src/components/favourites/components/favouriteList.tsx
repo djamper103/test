@@ -5,28 +5,33 @@ import style from './favouriteList.module.css'
 
 type FavouritesListProps = {
     item: RecipeDataType;
-    index: number;
     deleteFavourite: (value:string) => void
 }
 
 export const FavouritesList: FC<FavouritesListProps> = ({
     item,
-    index,
     deleteFavourite
 }) => {
   return (
-    <div>
+    <>
         {
             item && 
-            <div>
-                <div>{item.strArea}</div>
-                <img src={item.strMealThumb} alt="strMealThumb" className={style.image}/>
+            <div className={style.container}>
+                <div className={style.name}>
+                    <h3>{item.strMeal}</h3>
+                </div>
+                <img src={
+                        item.strMealThumb ? item.strMealThumb:
+                        `https://st4.depositphotos.com/14953852/24787/v/600/depositphotos_
+                        247872612-stock-illustration-no-image-available-icon-vector.jpg`
+                    } alt="strMealThumb" className={style.image}
+                />
                 <button onClick={ () => deleteFavourite(item.strMeal)}>
-                    delete recipe
+                    Delete Recipe
                 </button>
             </div>
         }
-    </div>
+    </>
   );
 };
 

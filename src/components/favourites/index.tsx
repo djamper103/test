@@ -3,6 +3,7 @@ import { useActions } from '../../hooks/useActions';
 import {useTypesSelector} from '../../hooks/useTypeSelector';
 import {RecipeDataType} from '../../types/recipe'
 import {FavouritesList} from './components/favouriteList';
+import style from './index.module.css'
 
 
 export const Favourites: FC = () => {
@@ -36,17 +37,16 @@ export const Favourites: FC = () => {
   }
 
   return (
-    <div>
+    <div className={style.container}>
      {
-       state.length > 0 ? state.map((item:RecipeDataType,index) => {
+       state.length > 0 ? state.map((item:RecipeDataType) => {
          return <FavouritesList
          key={item.strInstructions}
          item={item}
-         index={index}
          deleteFavourite={deleteFavourite}
          />
        }):
-       <div>Nothing in favorites</div>
+       <div className={style.text}>Nothing in favorites</div>
      }
     </div>
   );

@@ -18,10 +18,8 @@ export const Header: FC = () => {
 
   return (
     <div className={style.container}>
-      <div>
         <NavLink to="/">Random dish</NavLink>
-        <NavLink to="/favourites">Favourites</NavLink>
-      </div>
+        <NavLink to="/favourites" className={style.link}>Favourites</NavLink>
       {
         isFavourites &&
         <button onClick={onClick}>

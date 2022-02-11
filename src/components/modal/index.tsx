@@ -52,6 +52,7 @@ export const Modal: FC = ({}) => {
             }
             modalActionCreator(!isModal)
     };
+
   return (
         <div className={isModal ? style.modalActive : style.modal} onClick={onClick}>
           <div  onClick={(e) => e.stopPropagation()} className={style.containerMain}>
@@ -76,7 +77,7 @@ export const Modal: FC = ({}) => {
                 <input {...register("strMealThumb")} />
                 <p>{errors.strMealThumb?.message}</p>
 
-                <input type="submit" />
+                <input type="submit" className={style.sybmit}/>
             </form>
           </div>
         </div>

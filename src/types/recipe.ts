@@ -7,7 +7,6 @@ interface RecipeDataAction {
     payload: any[];
 }
 
-
 export type RecipeDataActions = RecipeDataAction
 
 export type RecipeDataType = {

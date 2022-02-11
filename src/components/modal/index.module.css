@@ -26,6 +26,28 @@
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
+    font-size: 24px;
+}
+
+.modalActive input{
+    width: 20vw;
+    height: 3vh;
+    margin-top: 1vh;
+    font-size: 24px;
+}
+
+.sybmit{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 0.6vw;
+}
+
+.sybmit:hover{
+    color: rgb(212, 82, 82);
+    cursor: pointer;
 }
 
 .containerMain{
@@ -39,4 +61,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .modalActive input{
+        width: 40vw;
+        height: 3vh;
+        margin-top: 1vh;
+        font-size: 24px;
+    }
+
+    .containerMain{
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modalActive{
+        font-size: 20px;
+    }
+
+    .modalActive input{
+        width: 60vw;
+        font-size: 20px;
+    }
+
+    .containerMain{
+        padding: 4%;
+    }
 }

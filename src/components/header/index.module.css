@@ -1,3 +1,68 @@
 .container{
+    height: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.container a{
+    font-size: 27px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.container a:hover{
+    color: rgb(212, 82, 82);
+}
+
+.container button{
+    font-size: 27px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-indent: 2em;
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+}
+
+.container button:hover{
+    color: rgb(212, 82, 82);
+    cursor: pointer;
+}
+
+.link{
+    position: relative;
+    left: 1.8vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .container button{
+        text-indent: 1em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container a{
+        font-size: 22px;
+    }
     
+    .container button{
+        font-size: 22px;
+        text-indent: 0.6em;
+        padding-top: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container a{
+        font-size: 16px;
+    }
+
+    .container button{
+        font-size: 16px;
+        padding-top: 3px;
+    }
 }

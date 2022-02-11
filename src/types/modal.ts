@@ -7,7 +7,6 @@ interface ModalAction {
     payload: boolean;
 }
 
-
 export type ModalActions = ModalAction
 
 export interface ModalState {

@@ -7,7 +7,6 @@ interface FavouritesAction {
     payload: boolean;
 }
 
-
 export type FavouritesActions = FavouritesAction
 
 
